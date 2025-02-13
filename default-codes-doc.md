@@ -4,12 +4,13 @@ Default codes that are processed and set when creating a new feature.
 
 | Code   | Description                                      | Example | Tags                      |
 |--------|--------------------------------------------------|---------|---------------------------|
-| `!TS`  | Current timestamp                               | `!TS`   | `date, time`              |
+| `!TS`  | Current timestamp                              | `!TS`   | `date, time`              |
 | `!LAT` | Latitude of the user's position                | `!LAT`  | `position, latitude`      |
 | `!LNG` | Longitude of the user's position               | `!LNG`  | `position, longitude`     |
 | `!ALT` | Altitude in meters                             | `!ALT`  | `position, altitude`      |
 | `!ACC` | Horizontal accuracy in meters                  | `!ACC`  | `position, accuracy`      |
 | `!QA`  | Horizontal accuracy in meters (e.g., `"93m"`)  | `!QA`   | `position, accuracy`      |
+| `!HVEL`| Horizontal velocity in m/s                     |`!TS`   | `position, velocity`       |
 
 
 
