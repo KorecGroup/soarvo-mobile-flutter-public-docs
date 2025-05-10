@@ -1,28 +1,10 @@
-Default codes that are processed and set when creating a new feature.
-
-### Supported Codes:
-
-| Code   | Description                                      | Example | Tags                      |
-|--------|--------------------------------------------------|---------|---------------------------|
-| `!TS`  | Current timestamp                              | `!TS`   | `date, time`              |
-| `!LAT` | Latitude of the user's position                | `!LAT`  | `position, latitude`      |
-| `!LNG` | Longitude of the user's position               | `!LNG`  | `position, longitude`     |
-| `!ALT` | Altitude in meters                             | `!ALT`  | `position, altitude`      |
-| `!ACC` | Horizontal accuracy in meters                  | `!ACC`  | `position, accuracy`      |
-| `!QA`  | Horizontal accuracy in meters (e.g., `"93m"`)  | `!QA`   | `position, accuracy`      |
-| `!HVEL`| Horizontal velocity in m/s                     |`!TS`   | `position, velocity`       |
-
-
-
-
-Default codes that are processed and set when creating a new feature, or when editing an existing feature.
-
-### Supported Codes:
-
-| Code   | Description                                      | Example | Tags                      |
-|--------|--------------------------------------------------|---------|---------------------------|
-| `!TSE`  | Current timestamp                               | `!TSE`  | `date, time`              |
-| `!LATE` | Latitude of the user's position                | `!LATE` | `position, latitude`      |
-| `!LNGE` | Longitude of the user's position               | `!LNGE` | `position, longitude`     |
-| `!ACCE` | Horizontal accuracy in meters                  | `!ACCE` | `position, accuracy`      |
-| `!QAE`  | Horizontal accuracy in meters (e.g., `"93m"`)  | `!QAE`  | `position, accuracy`      |
+## Geometry Based Default Codes
+These default codes are calculated and set when the geometry of a feature is changed.
+| Code | Description | Example | Tags |
+|------|------------|---------|------|
+| !LENGTH | Length of the geometry in meters | !LENGTH | geometry, length |
+| !2DAREA | Area of the geometry in square meters | !AREA | geometry, area |
+| !FEATUREX | X coordinate of the geometry in the coordinate system defined by the project the feature belongs to. Only available for point geometries. | !FEATUREX | geometry, coordinates, point, easting |
+| !FEATUREY | Y coordinate of the geometry in the coordinate system defined by the project the feature belongs to. Only available for point geometries. | !FEATUREY | geometry, coordinates, point, northing |
+| !FEATUREZ | Z coordinate of the geometry in the coordinate system defined by the project the feature belongs to. Only available for point geometries. | !FEATUREZ | geometry, coordinates, point, elevation |
+| !FEATUREALT | Altitude of the feature geometry. Only available for point geometries. | !FEATUREALT | geometry, coordinates, point, altitude |
